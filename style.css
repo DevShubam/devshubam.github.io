@@ -6,29 +6,29 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #282a36; /* Dracula dark background */
-  color: #f8f8f2; /* Bright off-white for crisp text reading */
+  background-color: rgba(40, 42, 54, 1); /* Dracula Dark Background */
+  color: rgba(248, 248, 242, 1); /* Crisp Off-White Text */
   font-family: "Roboto", sans-serif;
 }
 
 /* Text Selection Color */
 ::-moz-selection {
-  color: #ffffff;
-  background: #6272a4;
+  color: rgba(255, 255, 255, 1);
+  background: rgba(98, 114, 164, 1);
 }
 ::selection {
-  color: #ffffff;
-  background: #6272a4;
+  color: rgba(255, 255, 255, 1);
+  background: rgba(98, 114, 164, 1);
 }
 
 /* Headings & Bold Text (Dracula Orange) */
 h1, h2, h3, h4, h5, h6, strong, b, u {
-  color: #ffb86c;
+  color: rgba(255, 184, 108, 1);
 }
 
 /* Links (Dracula Green) */
 a {
-  color: #50fa7b;
+  color: rgba(80, 250, 123, 1);
   text-decoration: underline;
   transition: color 0.15s ease-in-out;
 }
@@ -36,12 +36,12 @@ a {
 /* Hovered Links (Dracula Yellow) */
 a:hover,
 a:focus {
-  color: #f1fa8c;
+  color: rgba(241, 250, 140, 1);
 }
 
-/* Visited Links (Dracula Pink/Purple instead of dark gray so it stays readable) */
+/* Visited Links (Dracula Soft Purple - stays easily readable) */
 a:visited {
-  color: #bd93f9; 
+  color: rgba(189, 147, 249, 1);
 }
 
 /* Active / Selected Links (Dracula Cyan) */
@@ -49,10 +49,10 @@ a.highlight,
 a.active,
 .selected {
   font-weight: bold;
-  color: #8be9fd;
+  color: rgba(139, 233, 253, 1);
 }
 
-/* Containers, Tables, Code Blocks */
+/* Containers, Tables, Code Blocks, Inputs */
 table,
 blockquote,
 pre,
@@ -61,8 +61,8 @@ input,
 select,
 textarea,
 button {
-  background-color: #44475a; /* Slightly lighter Dracula gray for contrast */
-  color: #f8f8f2;
+  background-color: rgba(68, 71, 90, 1); /* Contrast Gray */
+  color: rgba(248, 248, 242, 1);
   border-radius: 4px;
 }
 
@@ -71,7 +71,7 @@ blockquote, pre {
 }
 
 input, select, textarea, button {
-  border: 1px solid #6272a4;
+  border: 1px solid rgba(98, 114, 164, 1);
   padding: 0.5rem;
   font-family: inherit;
 }
