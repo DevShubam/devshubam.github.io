@@ -2,13 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 /* Base page setup */
-html,
+html {
+  background-color: rgba(40, 42, 54, 1); /* Dracula Dark Background across full screen */
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  background-color: rgba(40, 42, 54, 1); /* Dracula Dark Background */
+  margin: 0 auto;
+  padding: 3rem 1.5rem; /* Vertical and horizontal breathing room */
+  max-width: 42rem;      /* Centers content in a single crisp column (max-w-2xl) */
+  background-color: rgba(40, 42, 54, 1);
   color: rgba(248, 248, 242, 1); /* Crisp Off-White Text */
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
 /* Text Selection Color */
@@ -21,9 +26,66 @@ body {
   background: rgba(98, 114, 164, 1);
 }
 
+/* Layout & Structure */
+header, 
+section {
+  margin-bottom: 2.5rem;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid rgba(98, 114, 164, 0.4);
+  margin: 2rem 0;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.item {
+  margin-bottom: 1.5rem;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.date {
+  font-size: 0.875rem;
+  color: rgba(98, 114, 164, 1); /* Dracula Muted Purple-Gray */
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: rgba(248, 248, 242, 0.7);
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
 /* Headings & Bold Text (Dracula Orange) */
 h1, h2, h3, h4, h5, h6, strong, b, u {
   color: rgba(255, 184, 108, 1);
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0;
 }
 
 /* Links (Dracula Green) */
