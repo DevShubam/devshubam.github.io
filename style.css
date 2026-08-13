@@ -3,27 +3,27 @@
 
 /* Base page setup */
 html {
-  background-color: rgba(40, 42, 54, 1); /* Dracula Dark Background across full screen */
+  background-color: #2E3440; /* Nord Dark Background (nord0) */
 }
 
 body {
   margin: 0 auto;
   padding: 3rem 1.5rem; /* Vertical and horizontal breathing room */
   max-width: 42rem;      /* Centers content in a single crisp column (max-w-2xl) */
-  background-color: rgba(40, 42, 54, 1);
-  color: rgba(248, 248, 242, 1); /* Crisp Off-White Text */
+  background-color: #2E3440; /* nord0 */
+  color: #ECEFF4;            /* Nord Snow Storm Text (nord6) */
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
 
 /* Text Selection Color */
 ::-moz-selection {
-  color: rgba(255, 255, 255, 1);
-  background: rgba(98, 114, 164, 1);
+  color: #ECEFF4;      /* nord6 */
+  background: #4C566A; /* nord3 */
 }
 ::selection {
-  color: rgba(255, 255, 255, 1);
-  background: rgba(98, 114, 164, 1);
+  color: #ECEFF4;      /* nord6 */
+  background: #4C566A; /* nord3 */
 }
 
 /* Layout & Structure */
@@ -34,7 +34,7 @@ section {
 
 hr {
   border: 0;
-  border-top: 1px solid rgba(98, 114, 164, 0.4);
+  border-top: 1px solid #4C566A; /* Nord Polar Night Muted Accent (nord3) */
   margin: 2rem 0;
 }
 
@@ -56,19 +56,19 @@ hr {
 
 .date {
   font-size: 0.875rem;
-  color: rgba(98, 114, 164, 1); /* Dracula Muted Purple-Gray */
+  color: #D8DEE9; /* Nord Muted Gray (nord4) */
 }
 
 .subtitle {
   font-size: 0.875rem;
-  color: rgba(248, 248, 242, 0.7);
+  color: #E5E9F0; /* Nord Light Secondary (nord5) */
   margin-top: 0.25rem;
   margin-bottom: 0.5rem;
 }
 
-/* Headings & Bold Text (Dracula Orange) */
+/* Headings & Bold Text (Nord Frost Blue) */
 h1, h2, h3, h4, h5, h6, strong, b, u {
-  color: rgba(255, 184, 108, 1);
+  color: #88C0D0; /* Nord Ice Blue (nord8) */
   margin-top: 0;
 }
 
@@ -88,30 +88,30 @@ h3 {
   margin-bottom: 0;
 }
 
-/* Links (Dracula Green) */
+/* Links (Nord Frost Turquoise) */
 a {
-  color: rgba(80, 250, 123, 1);
+  color: #8FBCBB; /* nord7 */
   text-decoration: underline;
   transition: color 0.15s ease-in-out;
 }
 
-/* Hovered Links (Dracula Yellow) */
+/* Hovered Links (Nord Bright Frost) */
 a:hover,
 a:focus {
-  color: rgba(241, 250, 140, 1);
+  color: #81A1C1; /* nord9 */
 }
 
-/* Visited Links (Dracula Soft Purple - stays easily readable) */
+/* Visited Links (Nord Deep Frost Blue) */
 a:visited {
-  color: rgba(189, 147, 249, 1);
+  color: #5E81AC; /* nord10 */
 }
 
-/* Active / Selected Links (Dracula Cyan) */
+/* Active / Selected Links (Nord Aurora Yellow Accent) */
 a.highlight,
 a.active,
 .selected {
   font-weight: bold;
-  color: rgba(139, 233, 253, 1);
+  color: #EBCB8B; /* nord13 */
 }
 
 /* Containers, Tables, Code Blocks, Inputs */
@@ -123,8 +123,8 @@ input,
 select,
 textarea,
 button {
-  background-color: rgba(68, 71, 90, 1); /* Contrast Gray */
-  color: rgba(248, 248, 242, 1);
+  background-color: #3B4252; /* Nord Elevated Surface (nord1) */
+  color: #ECEFF4;            /* nord6 */
   border-radius: 4px;
 }
 
@@ -133,7 +133,7 @@ blockquote, pre {
 }
 
 input, select, textarea, button {
-  border: 1px solid rgba(98, 114, 164, 1);
+  border: 1px solid #4C566A; /* nord3 */
   padding: 0.5rem;
   font-family: inherit;
 }
