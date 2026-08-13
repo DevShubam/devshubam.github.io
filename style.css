@@ -1,129 +1,77 @@
-/* Theme */
+/* Google Font import for Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-.category-navbar {
-    font-size: 30px;
-}
-/* Text Selection Color*/
-
-::-moz-selection {
-    color: rgb(255, 255, 255);
-    background: rgb(128, 128, 128);
-}
-  ::selection {
-    color: rgb(255, 255, 255);
-    background: rgb(128, 128, 128);
-}
-
+/* Base page setup */
 html,
 body {
-	background-image: none !important;
-	background-color: rgba(40, 42, 54, 1) !important;
+  margin: 0;
+  padding: 0;
+  background-color: #282a36; /* Dracula dark background */
+  color: #f8f8f2; /* Bright off-white for crisp text reading */
+  font-family: "Roboto", sans-serif;
 }
 
-/* text*/
-body * {
-	color: rgb(255, 255, 255);
-	background-color: rgba(40, 42, 54, 1) !important;
-    	font-family: "Roboto", sans-serif;
-    /* overflow-x: hidden; */
+/* Text Selection Color */
+::-moz-selection {
+  color: #ffffff;
+  background: #6272a4;
+}
+::selection {
+  color: #ffffff;
+  background: #6272a4;
 }
 
-a,
-a * {
-	color: rgba(80, 250, 123, 1) !important;
-	background-color: transparent !important;
+/* Headings & Bold Text (Dracula Orange) */
+h1, h2, h3, h4, h5, h6, strong, b, u {
+  color: #ffb86c;
 }
 
+/* Links (Dracula Green) */
+a {
+  color: #50fa7b;
+  text-decoration: underline;
+  transition: color 0.15s ease-in-out;
+}
+
+/* Hovered Links (Dracula Yellow) */
 a:hover,
-a:hover *,
-a:visited:hover,
-a:visited:hover *,
-span[onclick]:hover,
-div[onclick]:hover,
-[role="link"]:hover,
-[role="link"]:hover *,
-[role="button"]:hover *,
-[role="menuitem"]:hover,
-[role="menuitem"]:hover *,
-.link:hover,
-.link:hover * {
-	color: rgba(241, 250, 140, 1) !important;
+a:focus {
+  color: #f1fa8c;
 }
 
-a:visited,
-a:visited * {
-	color: rgba(98, 114, 164, 1) !important;
+/* Visited Links (Dracula Pink/Purple instead of dark gray so it stays readable) */
+a:visited {
+  color: #bd93f9; 
 }
 
-/* Text that becomes yellow */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong,
-u,
-[id*="headline"],
-[class*="headline"],
-[id*="header"],
-[class*="header"],
-[class*="header"] td {
-	color: rgba(255, 184, 108, 1) !important;
+/* Active / Selected Links (Dracula Cyan) */
+a.highlight,
+a.active,
+.selected {
+  font-weight: bold;
+  color: #8be9fd;
 }
 
-table {
-	background-color: rgba(40, 42, 54, 1) !important;
-}
-
-[id*="overlay"],
-[id*="lightbox"],
-blockquote {
-	background-color: rgba(68, 71, 90, 1) !important;
-}
-
+/* Containers, Tables, Code Blocks */
+table,
+blockquote,
 pre,
-dl {
-	background-color: rgba(68, 71, 90, 1) !important;
-}
-
+dl,
 input,
 select,
-button,
-[role="button"],
-a.button,
-a.submit,
-a.BigButton,
-a.TabLink,
-.install[onclick] {
-	text-indent: 5px;
-	appearance: none !important;
-	-moz-appearance: none !important;
-	-webkit-appearance: none !important;
-	background: rgba(68, 71, 90, 1) !important;
+textarea,
+button {
+  background-color: #44475a; /* Slightly lighter Dracula gray for contrast */
+  color: #f8f8f2;
+  border-radius: 4px;
 }
 
-textarea {
-	appearance: none !important;
-	-moz-appearance: none !important;
-	-webkit-appearance: none !important;
-	background: rgba(68, 71, 90, 1) !important;
+blockquote, pre {
+  padding: 1rem;
 }
 
-div,
-ul,
-li {
-	background-image: none !important;
-}
-
-a.highlight,
-a.highlight *,
-a.active,
-a.active *,
-.selected,
-.selected *,
-[href="#"] {
-	font-weight: bold !important;
-	color: rgba(139, 233, 253, 1) !important;
+input, select, textarea, button {
+  border: 1px solid #6272a4;
+  padding: 0.5rem;
+  font-family: inherit;
 }
